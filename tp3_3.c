@@ -4,12 +4,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#define CANT 5;
 
 int main()
 {
-    char ** nombres = (char **)malloc(sizeof(char*)* CANT );
+    int cant = 5;
+    char *Buff = (char *)malloc(100 * sizeof(char)); //variable auxiliar
+    char **nombres = (char **)malloc(cant * sizeof(char*));
 
+    for (int i = 0; i < cant; i++)
+    {
+        char *filaNombres[i] = (char *)malloc(100 * sizeof(char));
+        printf("Ingrese un nombre: ");
+        gets(Buff);
+        free(Buff);
+    }
 
+    free(nombres);
+    
     return 0;
 }
