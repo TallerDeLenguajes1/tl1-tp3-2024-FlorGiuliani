@@ -93,7 +93,7 @@ int main()
             listaClientes[i].Productos[j].TipoProducto = (char *)malloc(sizeof(char) * (strlen(TiposProductos[tp])+1));
             strcpy(listaClientes[i].Productos[j].TipoProducto, TiposProductos[tp]); //defino el tipo de producto
 
-            listaClientes[i].Productos[j].PrecioUnitario = (100*100 + rand()%((100-10+1)*100))/100.00; 
+            listaClientes[i].Productos[j].PrecioUnitario = (10*100 + rand()%((100-10+1)*100))/100.00; 
         }
     }
 
